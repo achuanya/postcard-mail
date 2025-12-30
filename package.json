@@ -1,12 +1,43 @@
 {
-  "private": true,
+  "name": "postcard-mail",
+  "version": "0.1.0",
+  "description": "System notification emails as beautiful as postcards. - 像明信片一样漂亮的系统通知邮件模板",
   "type": "module",
+  "keywords": [
+    "email",
+    "mail",
+    "template",
+    "maizzle",
+    "tailwindcss",
+    "transactional",
+    "postcard"
+  ],
+  "author": "Lhasa",
+  "license": "MIT",
+  "homepage": "https://github.com/achuanya/postcard-mail#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achuanya/postcard-mail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achuanya/postcard-mail/issues"
+  },
+  "files": [
+    "components",
+    "emails",
+    "layouts",
+    "images",
+    "config.js",
+    "config.production.js",
+    "tailwind.config.js"
+  ],
   "scripts": {
     "dev": "maizzle serve",
     "build": "maizzle build production"
   },
   "dependencies": {
-    "@maizzle/framework": "latest",
+    "@lhasa/framework": "latest",
+    "@maizzle/framework": "npm:@lhasa/framework@latest",
     "tailwindcss-preset-email": "latest"
   }
 }

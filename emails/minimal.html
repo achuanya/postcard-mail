@@ -1,0 +1,156 @@
+---
+title: Minimal Template
+---
+<style>
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    a[x-apple-data-detectors],
+    a[href^="tel"],
+    a[href^="mailto"] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    u+#body a {
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    #MessageViewBody a {
+        color: inherit !important;
+        text-decoration: none !important;
+    }
+</style>
+
+<x-main>
+    <div class="bg-[#EEF2F7] font-inter py-10 px-4 h-full">
+        <table align="center" class="m-0 mx-auto w-[650px] max-w-full bg-[#FDFDFD] drop-shadow-xl rounded-sm">
+            <tr>
+                <td class="p-8 sm:p-6">
+                    <div style="position: absolute; bottom: 40px; right: 280px; z-index: 10;">
+                        <img style="opacity: 0.3" src="https://cos.lhasa.icu/dist/postcard-mail/fu.svg" alt="福">
+                    </div>
+                    <table class="w-full m-0">
+                        <tr>
+                            <td class="align-top w-1/2">
+                                <table class="m-0" role="presentation">
+                                    <tr>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            1</td>
+                                        <td class="w-1"></td>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            4</td>
+                                        <td class="w-1"></td>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            2</td>
+                                        <td class="w-1"></td>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            8</td>
+                                        <td class="w-1"></td>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            5</td>
+                                        <td class="w-1"></td>
+                                        <td
+                                            class="w-8 h-8 border border-dashed border-[#CBD5E1] text-center align-middle text-[#475569]">
+                                            7</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="11" class="text-xs text-[#94A3B8] pt-1 tracking-wider uppercase">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                            <td class="align-top w-1/2 text-right">
+                                <div class="inline-block">
+                                    <div
+                                        class="w-[50px] h-[50px] border border-dashed border-[#CBD5E1] bg-[#F8FAFC] flex items-center justify-center text-[#94A3B8] text-xs text-center p-[2px]">
+                                        <img class="w-full h-full object-cover"
+                                            src="https://cn.cravatar.com/avatar/{{comment.email_encrypted}}"
+                                            alt="Photo">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="w-full m-0">
+                        <div class="h-5"></div>
+                        <tr>
+                            <td class="w-[70%] align-top pr-6 text-[#334155] text-sm border-r border-[#E2E8F0]"
+                                style="line-height: 1.8; letter-spacing: 0.05em;">
+                                <a href="{{link_to_reply}}" target="_blank" rel="noopener noreferrer"
+                                    class="no-underline block">
+                                    <!-- 日志标题 -->
+                                    <p class="m-0 mb-4 text-[#334155]">
+                                        {{page_title}}
+                                    </p>
+                                    <!-- 评论创建者的评论内容 -->
+                                    <p class="m-0 text-[#334155] overflow-hidden" style="text-indent: 2em;">
+                                        {{reply_content}}</p>
+                                </a>
+                            </td>
+
+                            <td class="w-[30%] align-bottom pb-2">
+                                <div class="h-[99px]"></div>
+                                <div class="mb-3">
+                                    <!-- 收信人昵称 -->
+                                    <div class="text-xs text-[#475569] mb-1 pl-2">{{nick}}</div>
+                                    <div class="w-full h-[0.8px]"
+                                        style="background: repeating-linear-gradient(to right, #CBD5E1 0, #CBD5E1 4px, transparent 4px, transparent 7px);">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <!-- 收信人邮箱 -->
+                                    <div class="text-xs text-[#475569] mb-1 pl-2">{{email}}</div>
+                                    <div class="w-full h-[0.8px]"
+                                        style="background: repeating-linear-gradient(to right, #CBD5E1 0, #CBD5E1 4px, transparent 4px, transparent 7px);">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="text-xs text-[#475569] mb-1 pl-2">
+                                        <a href="{{link}}" style="text-decoration: none !important;">{{link}}</a>
+                                    </div>
+                                    <!-- 收信人网站 -->
+                                    <div class="w-full h-[0.8px]"
+                                        style="background: repeating-linear-gradient(to right, #CBD5E1 0, #CBD5E1 4px, transparent 4px, transparent 7px);">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- 评论创建者昵称 -->
+                                    <div class="text-xs text-[#475569] mb-1 pl-2">@ {{reply_nick}}</div>
+                                    <div class="w-full h-[0.8px]"
+                                        style="background: repeating-linear-gradient(to right, #CBD5E1 0, #CBD5E1 4px, transparent 4px, transparent 7px);">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <div class="text-center mt-8 text-[#64748B] text-xs">
+            <a href="Powered By Postcard Mail" target="_blank" rel="noopener noreferrer">Powered By Postcard Mail</a>
+        </div>
+    </div>
+</x-main>

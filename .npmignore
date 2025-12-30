@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Editor config
+.editorconfig
+
+# Test files
+*.test.js
+*.spec.js
+__tests__/
+
+# Documentation source (keep compiled README)
+docs/

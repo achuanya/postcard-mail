@@ -1,48 +1,41 @@
 <div align="center">
   <p>
-    <a href="https://maizzle.com" target="_blank">
+    <a href="https://mct.lhasa.icu" target="_blank">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/maizzle/maizzle/raw/master/.github/logo-dark.svg">
-        <img alt="Maizzle Starter" src="https://github.com/maizzle/maizzle/raw/master/.github/logo-light.svg" width="300" height="225" style="max-width: 100%;">
+        <img src="./images/logo200x200.svg">
       </picture>
     </a>
   </p>
-  <p>Quickly build HTML emails with Tailwind CSS</p>
-<div>
-
-  [![Version][npm-version-shield]][npm]
-  [![Build][github-ci-shield]][github-ci]
-  [![Downloads][npm-stats-shield]][npm-stats]
-  [![License][license-shield]][license]
-
-  </div>
+  <h1>Postcard Mail</h1>
+  <p>System notification emails as beautiful as postcards.</p>
+  <p>像明信片一样漂亮的系统通知邮件模板</p>
 </div>
 
-## Getting Started
+## Features
 
-Run this command and follow the prompts:
+- Beautiful postcard-style email templates
+
+- Perfectly integrated with [ArtalkUI](https://github.com/achuanya/artalk-ui) for a unified comment notification ecosystem.
+
+- Cross-email-client compatibility
+
+- Built with [Maizzle](https://maizzle.com) framework
+
+- [Tailwind CSS](https://tailwindcss.com) for styling
+
+  
+
+## Installation
 
 ```bash
-npx create-maizzle
+pnpm add postcard-mail
+# or
+npm install postcard-mail
+# or
+yarn add postcard-mail
 ```
 
-## Documentation
-
-Maizzle documentation is available at https://maizzle.com
-
-## Issues
-
-Please open all issues in the [framework repository](https://github.com/maizzle/framework).
 
 ## License
 
-The Maizzle framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-[npm]: https://www.npmjs.com/package/@maizzle/framework
-[npm-stats]: https://npm-stat.com/charts.html?package=%40maizzle%2Fframework&from=2019-03-27
-[npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg
-[npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?color=6875f5
-[github-ci]: https://github.com/maizzle/framework/actions
-[github-ci-shield]: https://github.com/maizzle/framework/actions/workflows/nodejs.yml/badge.svg
-[license]: ./LICENSE
-[license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?color=0e9f6e
+The Postcard Mail is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
